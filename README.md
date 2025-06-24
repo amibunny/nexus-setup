@@ -36,9 +36,11 @@ echo "10" | bash <(curl -sSL https://raw.githubusercontent.com/amibunny/nexus-se
 ```
 ----
 🧾 After Setup
-Visit https://beta.nexus.xyz
+Visit https://app.nexus.xyz/nodes
 
 Go to the Node section
+
+click on + Add CLI Node
 
 Copy your Node ID
 
