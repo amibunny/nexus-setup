@@ -55,7 +55,6 @@ Copy your Node ID
 
 Paste it into the CLI when prompted
 
-----
 ## 🖥️ Run in Background with Screen (VPS Recommended)
 Install and use screen to keep Nexus running even after logout:
 
@@ -80,6 +79,8 @@ nexus-network start --node-id <your-node-id>
 for example 
 
 nexus-network start --node-id 123456
+
+get your node id from  https://app.nexus.xyz/nodes
 
 
 ----
