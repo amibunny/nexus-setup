@@ -66,11 +66,12 @@ Create screen
 screen -S nexus
 ```
 To deatch screen press crtl + A then D
+
 To re-attach:
 ```
 screen -r nexus
 ```
-```
+
 ## Start nexus using this command 
 ```
 nexus-network start --node-id <your-node-id>
