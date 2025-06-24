@@ -21,7 +21,15 @@ These are the ideal specs for running and building Nexus CLI on a VPS or develop
 This script sets up the Nexus CLI with required dependencies and an optional 8GB or 10GB swap file on Ubuntu-based systems.
 
 ---
-
+## First Run this Two Command To avoid error 
+First : Install Bash 
+```
+sudo apt install Bash -y
+```
+Second : Install Curl 
+```
+sudo apt install Curl -y
+```
 ## 🧪 One-Click Setup (Swap File Included)
 
 Run one of the following in your terminal:
