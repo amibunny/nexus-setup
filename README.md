@@ -32,7 +32,7 @@ sudo apt install curl -y
 ```
 ## 🧪 One-Click Setup (Swap File Included)
 
-Run one of the following in your terminal:
+Run ANY one of the following in your terminal:
 
 ### ▶️ 8GB Swap Setup
 ```bash
