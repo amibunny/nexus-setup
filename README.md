@@ -14,15 +14,4 @@ curl -sSL https://raw.githubusercontent.com/amibunny/nexus-setup/main/setup.sh |
 
 ---
 
-## ✅ Final Tip
 
-Once you add the `README.md`, your repo will:
-
-- Show up cleanly on GitHub
-- Be easy to share with friends, users, testers
-- Let anyone install in 1 line
-
-Let me know if you'd like to:
-- Add auto-start on boot (`systemd`)
-- Add version logging
-- Or convert this into a Docker image too!
