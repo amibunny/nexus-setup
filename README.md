@@ -46,12 +46,16 @@ Paste it into the CLI when prompted
 
 ----
 
-🔁 Restarting Nexus CLI
-To restart Nexus CLI later, run:
+🔁 Start/ Restart Nexus CLI
+To Start/restart Nexus CLI later, run:
 
 ```
-curl https://cli.nexus.xyz/ | sh
+nexus-network start --node-id <your-node-id>
 ```
+
+for example 
+
+nexus-network start --node-id 123456
 
 ---
 ## 📦 What This Script Does
@@ -66,7 +70,13 @@ This script prepares your environment to run Nexus CLI smoothly by:
 - 🚀 Installs and runs the official **Nexus CLI**
 - ✅ Guides you to configure your Node ID from [https://beta.nexus.xyz](https://beta.nexus.xyz)
 
+---
+## 🧹 Uninstall Script
+If you want to completely remove all installed components (Nexus CLI, Rust, swap file, dependencies):
 
+```
+bash <(curl -sSL https://raw.githubusercontent.com/amibunny/nexus-setup/main/delete.sh)
+```
 ---
 🙏 Thank You
 Thank you for using this setup!
