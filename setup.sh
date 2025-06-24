@@ -44,8 +44,8 @@ curl https://cli.nexus.xyz/ | sh
 
 echo ""
 echo "✅ Setup Complete!"
-echo "Visit https://beta.nexus.xyz to get your Node ID."
-echo "To restart later: curl https://cli.nexus.xyz/ | sh"
+echo "Visit https://app.nexus.xyz/nodes to get your Node ID."
+echo "To start or restart: nexus-network start --node-id <your-node-id>"
 
 echo ""
 echo "🙏 Thank you for using this setup!"
