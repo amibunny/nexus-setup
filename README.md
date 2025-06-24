@@ -60,3 +60,10 @@ This script prepares your environment to run Nexus CLI smoothly by:
 - 📦 Installs system dependencies: `pkg-config`, `libssl-dev`, `protobuf-compiler`
 - 🚀 Installs and runs the official **Nexus CLI**
 - ✅ Guides you to configure your Node ID from [https://beta.nexus.xyz](https://beta.nexus.xyz)
+
+
+---
+🙏 Thank You
+Thank you for using this setup!
+Need help? Contact 👉 https://t.me/Amit3701
+-----
