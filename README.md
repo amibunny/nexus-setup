@@ -24,11 +24,11 @@ This script sets up the Nexus CLI with required dependencies and an optional 8GB
 ## First Run this Two Command To avoid error 
 First : Install Bash 
 ```
-sudo apt install Bash -y
+sudo apt install bash -y
 ```
 Second : Install Curl 
 ```
-sudo apt install Curl -y
+sudo apt install curl -y
 ```
 ## 🧪 One-Click Setup (Swap File Included)
 
