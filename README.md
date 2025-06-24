@@ -29,6 +29,24 @@ Paste this into your terminal:
 ```bash
 curl -sSL https://raw.githubusercontent.com/amibunny/nexus-setup/main/setup.sh | bash
 ```
+----
+🧾 After Setup
+Visit https://beta.nexus.xyz
+
+Go to the Node section
+
+Copy your Node ID
+
+Paste it into the CLI when prompted
+
+----
+
+🔁 Restarting Nexus CLI
+To restart Nexus CLI later, run:
+
+```
+curl https://cli.nexus.xyz/ | sh
+```
 
 ---
 ## 📦 What This Script Does
