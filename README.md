@@ -55,7 +55,9 @@ Copy your Node ID
 Paste it into the CLI when prompted
 
 ----
-## Install Screen (for vps)
+## 🖥️ Run in Background with Screen (VPS Recommended)
+Install and use screen to keep Nexus running even after logout:
+
 ```
 sudo apt install screen -y
 ```
@@ -63,7 +65,12 @@ Create screen
 ```
 screen -S nexus
 ```
-
+To deatch screen press crtl + A then D
+To re-attach:
+```
+screen -r nexus
+```
+```
 ## Start nexus using this command 
 ```
 nexus-network start --node-id <your-node-id>
