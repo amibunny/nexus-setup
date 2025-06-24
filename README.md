@@ -93,7 +93,7 @@ nexus-network start --node-id <your-node-id>
 ```
 ---
 ## 💰 Claiming Your NEX Rewards
-    Once your Nexus CLI node is running and earning points, you can convert your points into Testnet NEX tokens.
+Once your Nexus CLI node is running and earning points, you can convert your points into Testnet NEX tokens.
 
   - 👉 Go to the rewards page:
     https://app.nexus.xyz/rewards
