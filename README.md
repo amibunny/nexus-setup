@@ -28,11 +28,11 @@ Run one of the following in your terminal:
 
 ### ▶️ 8GB Swap Setup
 ```bash
-bash -c "$(echo 8 | bash <(curl -sSL https://raw.githubusercontent.com/amibunny/nexus-setup/main/setup.sh))"
+echo "8" | bash <(curl -sSL https://raw.githubusercontent.com/amibunny/nexus-setup/main/setup.sh)
 ```
 ### ▶️ 10GB Swap Setup
 ```bash
-bash -c "$(echo 10 | bash <(curl -sSL https://raw.githubusercontent.com/amibunny/nexus-setup/main/setup.sh))"
+echo "10" | bash <(curl -sSL https://raw.githubusercontent.com/amibunny/nexus-setup/main/setup.sh)
 ```
 ----
 🧾 After Setup
