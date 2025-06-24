@@ -30,7 +30,7 @@ Run one of the following in your terminal:
 ```bash
 bash -c "$(echo 8 | bash <(curl -sSL https://raw.githubusercontent.com/amibunny/nexus-setup/main/setup.sh))"
 ```
-### ▶️ 8GB Swap Setup
+### ▶️ 10GB Swap Setup
 ```bash
 bash -c "$(echo 10 | bash <(curl -sSL https://raw.githubusercontent.com/amibunny/nexus-setup/main/setup.sh))"
 ```
