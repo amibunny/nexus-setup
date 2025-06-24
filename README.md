@@ -26,8 +26,12 @@ This script sets up the Nexus CLI with required dependencies and an optional 8GB
 
 Paste this into your terminal:
 
-```bash
-curl -sSL https://raw.githubusercontent.com/amibunny/nexus-setup/main/setup.sh | bash
+```bash for 8 gb swap file 
+echo "8" | bash <(curl -sSL https://raw.githubusercontent.com/amibunny/nexus-setup/main/setup.sh)
+```
+```bash this for 10gb swap file
+echo "10" | bash <(curl -sSL https://raw.githubusercontent.com/amibunny/nexus-setup/main/setup.sh)
+
 ```
 ----
 🧾 After Setup
