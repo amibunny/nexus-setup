@@ -1,55 +1,40 @@
 #!/bin/bash
 
-echo "🚀 Starting Nexus CLI Full Setup..."
-echo "==================================="
+echo "[INFO] Starting Nexus CLI Full Setup..."
+echo "======================================="
 
-# 🧠 Ask user for swap size
-echo ""
+# Prompt for swap size
 read -p "Enter desired SWAP size (8 or 10 GB): " SWAP_GB
 
 if [[ "$SWAP_GB" != "8" && "$SWAP_GB" != "10" ]]; then
-  echo "❌ Invalid input. Please enter 8 or 10."
+  echo "[ERROR] Invalid input. Please enter 8 or 10."
   exit 1
 fi
 
-SWAP_MB=$((SWAP_GB * 1024))
-SWAP_FILE="/swapfile"
+# Create swap
+echo "[INFO] Creating ${SWAP_GB}GB swap file..."
+sudo fallocate -l ${SWAP_GB}G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+echo "[OK] Swap file created and activated."
 
-echo "🛠️ Creating ${SWAP_GB}GB swap file at $SWAP_FILE..."
+# Create project dir
+mkdir -p ~/nexus-cli
+cd ~/nexus-cli
 
-# Create swap file
-sudo fallocate -l ${SWAP_MB}M $SWAP_FILE
-sudo chmod 600 $SWAP_FILE
-sudo mkswap $SWAP_FILE
-sudo swapon $SWAP_FILE
+# Install dependencies
+echo "[INFO] Installing system packages..."
+sudo apt-get update -y
+sudo apt-get install -y pkg-config libssl-dev protobuf-compiler build-essential git curl
 
-# Make it persistent
-echo "$SWAP_FILE none swap sw 0 0" | sudo tee -a /etc/fstab
-
-# Confirm swap
-echo "✅ Swap of ${SWAP_GB}GB created and activated."
-swapon --show
-
-# 📁 Create working dir
-mkdir -p nexus-cli
-cd nexus-cli
-
-# 🧰 Install dependencies
-echo ""
-echo "📦 Installing required packages..."
-sudo apt update
-sudo apt install -y curl git pkg-config libssl-dev protobuf-compiler
-
-# 🦀 Install Rust
-echo ""
-echo "🦀 Installing Rust..."
+# Install Rust
+echo "[INFO] Installing Rust..."
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-
-# Load Rust into session
 source "$HOME/.cargo/env"
 
-# ➕ Add RISC-V target
-echo "🔧 Adding RISC-V target..."
+# Add RISC-V target
 rustup target add riscv32i-unknown-none-elf
 
 # ⬇️ Install Nexus CLI
