@@ -55,17 +55,33 @@ Copy your Node ID
 Paste it into the CLI when prompted
 
 ----
+## Install Screen (for vps)
+```
+sudo apt install screen -y
+```
+Create screen
+```
+screen -S nexus
+```
 
-🔁 Start/ Restart Nexus CLI
-To Start/restart Nexus CLI later, run:
+## Start nexus using this command 
+```
+nexus-network start --node-id <your-node-id>
+```
+for example 
+
+nexus-network start --node-id 123456
+
+
+----
+
+🔁 Restart Nexus CLI
+To restart Nexus CLI later, run:
 
 ```
 nexus-network start --node-id <your-node-id>
 ```
 
-for example 
-
-nexus-network start --node-id 123456
 
 ---
 ## 📦 What This Script Does
