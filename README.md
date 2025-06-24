@@ -10,7 +10,7 @@ These are the ideal specs for running and building Nexus CLI on a VPS or develop
 | CPU           | 2+ vCPU            | For faster compilation and performance |
 | RAM           | 8+ GB              | Required for Rust builds               |
 | Swap          | 8–10 GB            | Script helps configure this            |
-| Disk Space    | 10+ GB             | Needed for builds, cache, and logs     |
+| Disk Space    | 50+ GB             | Needed for builds, cache, and logs     |
 | Internet      | Stable connection  | Needed for CLI sync and downloads      |
 -------------------------------------------------------------------------------
 > ✅ **Recommended VPS**: Ubuntu 22.04 LTS with at least **2 vCPU, 8 GB RAM, and 10 GB disk**
