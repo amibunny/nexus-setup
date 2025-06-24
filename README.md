@@ -42,6 +42,7 @@ echo "8" | bash <(curl -sSL https://raw.githubusercontent.com/amibunny/nexus-set
 ```bash
 echo "10" | bash <(curl -sSL https://raw.githubusercontent.com/amibunny/nexus-setup/main/setup.sh)
 ```
+press : y
 ----
 🧾 After Setup
 Visit https://app.nexus.xyz/nodes
@@ -89,6 +90,17 @@ To restart Nexus CLI later, run:
 ```
 nexus-network start --node-id <your-node-id>
 ```
+---
+## 💰 Claiming Your NEX Rewards
+    Once your Nexus CLI node is running and earning points, you can convert your points into Testnet NEX tokens.
+
+  - 👉 Go to the rewards page:
+    https://app.nexus.xyz/rewards
+
+  - 🧮 Conversion Rate: 1000 points = 1 NEX
+
+  - 📝 Click on "Claim Testnet NEX" on the right side of the page.
+    All available points will be converted into NEX automatically.
 
 
 ---
