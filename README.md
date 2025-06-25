@@ -55,7 +55,7 @@ Copy your Node ID
 
 Paste it into the CLI when prompted
 
-## 🖥️ Run in Background with Screen (VPS Recommended)
+## 🖥️ Run in Background with Screen (ONLY FOR VPS OTHERS SKIP TO RUN COMMAND)
 Install and use screen to keep Nexus running even after logout:
 
 ```
