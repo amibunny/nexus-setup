@@ -103,7 +103,9 @@ Once your Nexus CLI node is running and earning points, you can convert your poi
   - 📝 Click on "Claim Testnet NEX" on the right side of the page.
     All available points will be converted into NEX automatically.
 
-
+---
+## Video Guide Link :
+   http://shorturl.at/WcfI6
 ---
 ## 📦 What This Script Does
 
